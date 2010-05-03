@@ -21,7 +21,8 @@ settings.configure(
 )
 
 fh = open('conf.yaml', 'r')
-config = yaml.load(fh)['settings']
+config = yaml.load(fh)
+config = config['settings']
 fh.close()
 
 secret_key = secret_key = ''.join([choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])

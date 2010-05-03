@@ -2,7 +2,7 @@ settings:
     user: charles
     email: coleifer@gmail.com
     site_email: charlie.leifer@gmail.com
-    site_email_password: ? 
+    site_email_password: noclue
     base_site: /home/charles/public_html/
     pythonpath:
         - /home/charles/bin/django
