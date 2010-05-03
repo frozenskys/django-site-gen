@@ -1,0 +1,59 @@
+body { 
+    font-family: Helvetica, Verdana, Arial, sans;
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    width: 1024px;
+    margin: 10px auto;
+}
+h1 { font-size: 36px; }
+a img { border: 1px solid #222; }
+a { color: #ccc; }
+a:hover { color: #ddd; }
+
+ul li a { text-decoration: none; }
+
+table th { text-align: left; }
+
+input[type='text'], input[type='password'], textarea { 
+    border: 1px solid #ccc; padding: 3px; font-family: Helvetica, Verdana, Arial, sans; }
+input[type='submit'], input[type='button'] {
+    border: 1px solid #ccc; padding: 3px 15px; color: #000; }
+input[type='submit'].small_button { padding: 2px; font-size: 10.5px; }
+
+div#header { background-color: #041; color: #fff; }
+div#header h1 { margin: 0; padding: 20px 0 20px 30px; }
+
+div#content { margin: 0 auto; padding: 10px 20px; margin-top: 10px; background-color: #222; font-size: 120%; }
+div#content ul { list-style-type: none; }
+div#content ul li { padding: 3px 3px; margin: 0; }
+
+div.content_header { width: 694px; }
+div.content_body { width: 694px; }
+div.content_body:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+div#sidebar { 
+    width: 250px; float: right; font-size: 120%; background-color: #555; 
+    padding: 10px; margin-left: 20px; text-align: center; }
+
+div#sidebar h3 { margin: 20px 0 10px 0; }
+div#sidebar ul { list-style-type: none; padding: 0; margin: 0; text-align: left; width: 250px; }
+div#sidebar ul li { padding: 3px; margin: 0; border-bottom: 1px dotted #222; }
+div#sidebar td { text-align: left; }
+
+ul#nav { list-style: none; margin: 0; padding: 0; font-size: 13px; line-height: 24px; border-top: 1px solid #061; }
+ul#nav:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+ul#nav li { float: left; margin: 0; padding: 0; }
+ul#nav li a { float: left; display: block; padding: 6px 15px; color: #fff; font-weight: normal; }
+ul#nav li a:hover { background: #061; }
+ul#nav li.right { float: right; }
+
+div.post { margin-bottom: 15px; clear: left; border-bottom: 1px solid #aaa; padding: 10px; min-height: 75px; }
+div.post div.avatar { float: left; }
+div.post div.post_content { margin-left: 85px; }
+
+div#footer { background-color: #041; color: #fff; margin-top: 10px; padding: 10px; }
+
+div.pagination {border: 1px solid #444; padding: 4px; text-align: center; font-size: 12px;}
+div.pagination a { padding: 6px; }
+div.pagination span.current { padding: 6px; background-color: #666; }
