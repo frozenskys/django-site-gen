@@ -8,3 +8,28 @@ settings:
         - /home/charles/bin/django
         - /home/charles/code/
         - /home/charles/pypath/
+directories:
+    site_root: '%(base_site)s%(site_name)s.com/%(site_name)s/'
+    wsgi: '%(base_site)s%(site_name)s.com/%(site_name)s/apache/'
+    media: '%(base_site)s%(site_name)s.com/%(site_name)s/media/'
+    templates: '%(base_site)s%(site_name)s.com/%(site_name)s/templates/'
+    logs: '%(base_site)s%(site_name)s.com/logs/'
+    private: '%(base_site)s%(site_name)s.com/private/'
+files:
+    '%(base_site)s%(site_name)s.com/%(site_name)s/settings.py': settings.py.conf
+    '%(base_site)s%(site_name)s.com/%(site_name)s/urls.py': urls.py.conf
+    '%(base_site)s%(site_name)s.com/%(site_name)s/manage.py': manage.py.conf
+    '%(base_site)s%(site_name)s.com/%(site_name)s/__init__.py': empty.conf
+    '%(base_site)s%(site_name)s.com/logs/apache_error.log': empty.conf
+    '%(base_site)s%(site_name)s.com/logs/apache_access.log': empty.conf
+    '%(base_site)s%(site_name)s.com/logs/nginx_error.log': empty.conf
+    '%(base_site)s%(site_name)s.com/logs/nginx_access.log': empty.conf
+    '%(base_site)s%(site_name)s.com/%(site_name)s/apache/%(site_name)s.wsgi': wsgi.conf
+    '%(base_site)s%(site_name)s.com/apache_%(site_name)s.com': apache.conf
+    '%(base_site)s%(site_name)s.com/nginx_%(site_name)s.com': nginx.conf
+    '%(base_site)s%(site_name)s.com/hosts': hosts.conf
+    '%(base_site)s%(site_name)s.com/ports.conf': ports.conf
+local_files:
+    '%(base_site)s%(site_name)s.com/local_apache_%(site_name)s.com': apache.conf
+    '%(base_site)s%(site_name)s.com/local_nginx_%(site_name)s.com': nginx.conf
+    '%(base_site)s%(site_name)s.com/local_hosts': hosts.conf
