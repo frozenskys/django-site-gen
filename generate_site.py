@@ -77,4 +77,7 @@ os.system('createdb %(site_name)s_main' % context)
 print 'Copying media directory'
 os.system('cp -R ./media/* %(media)s' % (context))
 
+print 'Copying template directory'
+os.system('cp -R ./templates/* %(templates)s' % (context))
+
 print 'Done!'
